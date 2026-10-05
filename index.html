@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário da Naty 🎉</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .convite {
+            background: #ffffff;
+            border-radius: 20px;
+            max-width: 460px;
+            width: 100%;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            border: 3px solid #d63384;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero {
+            position: relative;
+            height: 380px;
+            overflow: hidden;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero img {
+            height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 40px 20px 20px;
+            background: linear-gradient(transparent, rgba(255,255,255,0.9));
+            color: #ff66a3;
+            text-align: center;
+        }
+
+        .hero-overlay h1 {
+            font-family: 'Sacramento', cursive;
+            font-size: 3rem;
+            font-weight: 400;
+            margin-bottom: 2px;
+            color: #ff66a3;
+            text-shadow: 1px 1px 2px #c94080;
+        }
+
+        .content {
+            padding: 28px 24px;
+            text-align: center;
+        }
+
+        .frase {
+            font-size: 1.05rem;
+            color: #ff66a3;
+            line-height: 1.7;
+            margin-bottom: 28px;
+            font-weight: 400;
+        }
+
+        .frase em {
+            color: #c94080;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .info-section {
+            background: #fff5f8;
+            border-radius: 14px;
+            padding: 22px 18px;
+            margin-bottom: 24px;
+            border: 3px solid #d63384;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            color: #ff66a3;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-item .icon {
+            font-size: 1.2rem;
+        }
+
+        .info-item strong {
+            color: #c94080;
+            font-weight: 600;
+        }
+
+        .maps-btn {
+            display: inline-block;
+            background: #ff66a3;
+            color: #1a1a1a;
+            padding: 10px 22px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+
+        .maps-btn:hover {
+            background: #e0528c;
+        }
+
+        .footer-msg {
+            font-size: 1rem;
+            color: #ff66a3;
+            margin-top: 8px;
+        }
+
+        .footer-msg span {
+            font-size: 1.3rem;
+        }
+
+        @media (max-width: 400px) {
+            .hero { height: 280px; }
+            .hero-overlay h1 { font-size: 2.4rem; }
+            .content { padding: 22px 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="convite">
+        <div class="hero">
+            <img src="Designer (6).png" alt="Naty">
+            <div class="hero-overlay">
+                <h1>Naty faz aniversário!</h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="frase">
+                Você está convidado(a) para celebrar mais um ano de vida comigo! 🥳<br><br>
+                Bora dividir essa noite especial? Cada um paga o seu e a diversão fica por conta de todos! 🍻<br><br>
+                <em>Sua presença é o mais importante!</em> 💖
+            </p>
+
+            <div class="info-section">
+                <div class="info-item">
+                    <span class="icon">📅</span>
+                    <span><strong>9 de Outubro</strong> (Sexta-feira)</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">⏰</span>
+                    <span>A partir das <strong>21h</strong></span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <span><strong>Jardim Oriente</strong></span>
+                </div>
+                <div class="info-item">
+                    <span class="icon"></span>
+                    <span style="font-size: 0.85rem;">Rua 22, Quadra 19, Lote 2<br>Valparaíso de Goiás - GO</span>
+                </div>
+                <a href="https://www.google.com/maps/search/rua+22+qd+19+lote+2+jardim+oriente+valparaiso+de+goias" target="_blank" class="maps-btn">
+                    📌 Ver no Maps
+                </a>
+            </div>
+
+            <p class="footer-msg">Te espero lá! <span>💖</span></p>
+        </div>
+    </div>
+</body>
+</html>
